@@ -37,7 +37,7 @@
         co = checkout
         c = commit
         f = fetch
-	    week = log --author='kevin' --after={1.week.ago} --pretty=oneline --abbrev-commit
+        week = log --author='kevin' --after={1.week.ago} --pretty=oneline --abbrev-commit
         cob = checkout -b
 
 [push]
