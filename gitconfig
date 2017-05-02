@@ -1,5 +1,5 @@
 [user]
-	email = kevin.moloney@emutex.com
+    email = kevin.moloney@emutex.com
 	name = Kevin Moloney
 
 [core]
@@ -12,72 +12,61 @@
 	ui = true
 
 [color "status"]
-        added = green
-        changed = yellow
-        untracked = magenta
-        deleted = red
+    added = green
+    changed = yellow
+    untracked = magenta
+    deleted = red
 
 [color "branch"]
-        current = magenta
-        local = yellow
-        remote = green
+    current = magenta
+    local = yellow
+    remote = green
 
 [color "diff"]
-        meta = yellow
-        frag = magenta
-        old = red
-        new = green
+    meta = yellow
+    frag = magenta
+    old = red
+    new = green
 
 [alias]
-        tr = log --oneline --graph --full-history --all --color --decorate --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"
-        st = status
-        sh = show
-        d = diff
-        a = add
-        co = checkout
-        c = commit
-        f = fetch
-        week = log --author='kevin' --after={1.week.ago} --pretty=oneline --abbrev-commit
-        cob = checkout -b
+    tr = log --oneline --graph --full-history --all --color --decorate --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"
+    st = status
+    sh = show
+    d = diff
+    a = add
+    co = checkout
+    c = commit
+    f = fetch
+    week = log --author='kevin' --after={1.week.ago} --pretty=oneline --abbrev-commit
+    cob = checkout -b
 
 [push]
 	default = current
 
 [help]
-        autocorrect = 1
+    autocorrect = 1
 
 [web]
-        browser = google-chrome
+    browser = google-chrome
 
 [github]
-        user = kevin306
-        token = token
+    user = kevin306
+    token = token
 
 [merge]
     keepBackup = false;
-    tool = p4merge
+    tool = meld
 
 [mergetool]
     prompt = false
 
-[mergetool "p4merge"]
-    cmd = p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
-    keepTemporaries = false
-    trustExitCode = false
-    keepBackup = false
-
 [diff]
-    tool = p4merge
+    tool = meld
 
 [difftool]
     prompt = false
 
-[difftool "p4merge"]
-    cmd = p4merge "$LOCAL" "$REMOTE"
-    keepTemporaries = false
-    trustExitCode = false
-    keepBackup = false
 [commit]
 	template = /home/kevin/ownCloud/docs/scripts/git_template.txt
 [grep]
-  linenumber = true
+    linenumber = true
